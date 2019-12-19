@@ -1,9 +1,12 @@
 <center><canvas id="canvas" width="400" height="400"></canvas></center>
 
 <script>
+//
 	window.onload = function () {
+		//pega o elemento desse id//
     canvas = document.getElementById("canvas");
    ctx = canvas.getContext('2d');
+   //faz todo o desenho do jogos a parte grafica
   document.addEventListener("keydown", function(e){
   	console.log(e.keyCode);
   	switch(e.keyCode){
@@ -28,7 +31,9 @@
   });
 alert("que jogar");
 confirm("Sim");
+
    setInterval(jogo, 1000/10);
+   //define ou chama a cada  um intervalo de tempo//
 }
 
 positionX = 10;
